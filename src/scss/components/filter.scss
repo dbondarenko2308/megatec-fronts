@@ -1,0 +1,148 @@
+@use "../config" as *;
+
+.filter {
+  height: 100%;
+
+  &__head {
+    justify-content: space-between;
+    gap: rem(20);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    height: 100%;
+
+    @include media-mx(767) {
+      overflow: auto;
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(60);
+    padding: 0 rem(20);
+    border-radius: rem(8);
+    background-color: var(--color-white);
+    transition: var(--bs-transition);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-green-800);
+
+      .filter__name-item {
+        color: var(--color-white);
+      }
+
+      .filter__name-icon {
+        fill: var(--color-white);
+      }
+    }
+
+    &.is-open {
+      background-color: var(--color-green-900);
+
+      .filter__name-item {
+        color: var(--color-white);
+      }
+
+      .filter__name-icon {
+        fill: var(--color-white);
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: rem(10);
+
+      &.is-checkbox-drop {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: rem(20);
+        border-radius: 0px 0px rem(24) rem(24);
+        background-color: var(--color-white);
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: var(--bs-transition);
+        z-index: 5;
+
+        &.is-open {
+          opacity: 1;
+          pointer-events: auto;
+          visibility: visible;
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: rem(10);
+
+      input {
+        position: relative;
+        flex: 0 0 rem(20);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(20);
+        height: rem(20);
+        margin: rem(2);
+        appearance: none;
+        -webkit-appearance: none;
+        border: 1px solid var(--color-grey-400);
+        border-radius: rem(4);
+        outline: none;
+        transition: var(--bs-transition);
+        cursor: pointer;
+
+        &::after {
+					content: '';
+					display: block;
+					width: rem(13);
+					height: rem(10);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					transition: var(--bs-transition);
+				}
+
+				&:checked {
+					border-color: var(--color-red-light);
+					background-color: var(--color-red-light);
+
+					&::after {
+						background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExIDFMNSAxMUwxIDcuODQyMTEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+					}
+				}
+      }
+
+      &:hover {
+
+        .u-text-md {
+          color: var(--color-green-800);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@use "../config" as *;
+
+.popup {
+	padding: 0;
+	border-radius: rem(28);
+
+  &.is-right {
+    display: flex;
+    align-self: flex-end;
+    margin-right: rem(105);
+
+    @include media-mx(820) {
+      align-self: center;
+      margin-top: rem(41);
+      margin-right: 0;
+    }
+  }
+
+	.f-button[data-fancybox-close] {
+		top: 0;
+		right: -65px;
+		--f-button-color: var(--color-black);
+		--f-button-width: 54px;
+		--f-button-height: 54px;
+		--f-button-svg-height: 24px;
+		--f-button-svg-width: 24px;
+    border-radius: rem(20);
+    border: 1px solid transparent;
+    background-color: var(--color-white);
+    transition: var(--bs-transition);
+
+    @include media-mx(820) {
+      top: -65px;
+      right: 0;
+    }
+
+    &:hover {
+      color: var(--color-black);
+      border-color: var(--color-neon-green-yellow);;
+    }
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+    padding: rem(30) auto-clamp(20, 30);
+
+    @include media-mx(767) {
+      flex-direction: column-reverse;
+    }
+	}
+
+  &__contacts {
+    margin-bottom: auto-clamp(40, 50);
+
+    @include media-mx(767) {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+  }
+}

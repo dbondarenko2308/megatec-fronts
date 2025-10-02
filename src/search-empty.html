@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { 'title': 'Результаты поиска' })
+	<body>
+		<div id="smooth-wrapper">
+			@@include('html/header.html')
+
+			<main id="smooth-content" class="page">
+				<div data-observ></div>
+
+				@@include('html/breadcrumbs.html', { 'title': 'Результаты поиска' })
+
+				<div class="basket">
+					<div class="basket__container">
+						<h1 class="basket__title u-text-color-black u-text-h1">Результаты поиска</h1>
+
+
+            <div class="basket-empty-text">
+             По запросу «Чай» ничего не найдено. Попробуйте изменить текст запроса.
+            </div>
+
+					
+					</div>
+				</div>
+
+				@@include('html/footer.html')
+				<div class="basket__overlay"></div>
+			</main>
+
+		</div>
+	</body>
+</html>

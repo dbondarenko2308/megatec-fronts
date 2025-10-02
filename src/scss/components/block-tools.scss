@@ -1,0 +1,61 @@
+@use "../config" as *;
+
+.block__tools {
+  border-radius: rem(24);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+
+  &-container {
+    @include make-container();
+    padding-top: auto-clamp(40, 80);
+    padding-bottom: auto-clamp(40, 80);
+  }
+
+  &-caption {
+    display: grid;
+    grid-template-columns: auto-clamp(260, 460) 1fr;
+    margin-bottom: auto-clamp(20, 40);
+
+    &__text {
+      max-width: 900px;
+    }
+    
+    @include media-mx(767) {
+      grid-template-columns: 100%;
+      grid-gap: rem(20);
+    }
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: auto-clamp(30, 60);
+    margin-left: auto-clamp(260, 460);
+
+    @include media-mx(767) {
+      margin-left: 0;
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    max-width: 900px;
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: auto-clamp(3, 5);
+
+      li {
+        margin-left: rem(25);
+        list-style: decimal;
+      }
+    }
+  }
+
+}

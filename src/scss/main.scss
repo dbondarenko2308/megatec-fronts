@@ -1,0 +1,44 @@
+// 1. Базовые стили и конфигурация
+@use "config/fonts";
+@use "config/root";
+@use "config/reset";
+@use "config/fullscreen";
+@use "config/scrollbar";
+@use "config/utilities";
+@use "config/base";
+@use "config/common";
+
+// 2. Библиотеки
+@use 'swiper/swiper-bundle.css';
+@use '@fancyapps/ui/dist/fancybox/fancybox.css';
+
+// 3. Компоненты проекта
+@use "components/header";
+@use "components/breadcrumbs";
+@use "components/form";
+@use "components/buttons";
+@use "components/popup";
+@use "components/nw-modal";
+@use "components/home";
+@use "components/block-about";
+@use "components/block-tools";
+@use "components/block-advantages";
+@use "components/block-form";
+@use "components/catalog";
+@use "components/filter";
+@use "components/footer";
+@use "components/pagination";
+@use "components/detal-card";
+@use "components/basket-new";
+@use "components/error";
+@use "components/about";
+@use "components/search";
+@use "components/news";
+@use "components/news-detal";
+@use "components/video";
+@use "components/contacts";
+@use "components/dealers";
+@use "components/page-content";
+
+
+

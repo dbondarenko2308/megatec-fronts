@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Каталог'
+  })
+  <body>
+    
+    <div id="smooth-wrapper">
+      @@include('html/header.html')
+
+      <main id="smooth-content" class="page">
+        <div data-observ></div>
+
+        @@include('html/breadcrumbs.html', {
+          'title': 'Каталог'
+        })
+
+        <section class="catalog u-margin-bottom-l">
+          <div class="catalog__container">
+            <div class="catalog__section">
+              <div class="catalog__section-caption">
+                <h1 class="u-text-h1 u-text-color-black">Каталог</h1>
+              </div>
+              <div class="catalog__section-list">
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-1.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">ТОКАРНЫЕ ДЕРЖАВКИ</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-2.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">Антивибрационные державки</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-3.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">ТОКАРНЫЕ ПЛАСТИНЫ</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-4.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">ОТРЕЗКА И&nbsp;ОБРАБОТКА КАНАВОК</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-5.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">РЕЗЬБОНАРЕЗНОЙ ТОКАРНЫЙ ИНСТРУМЕНТ</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-6.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">ЦЕЛЬНЫЙ ТВЕРДОСПЛАВНЫЙ ИНСТРУМЕНТ</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-7.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">ФРЕЗЫ СО&nbsp;СМЕННЫМИ МНОГОГРАННЫМИ ПЛАСТИНАМИ</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-8.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">СВЕРЛА СО&nbsp;СМЕННЫМИ МНОГОГРАННЫМИ ПЛАСТИНАМИ</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-9.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">Резьбофрезы</h3>
+                </a>
+                <a href="#" class="catalog__section-item">
+                  <div class="catalog__section-item__image">
+                    <img src="./images/catalog/catalog-section-item-10.png" alt="">
+                  </div>
+                  <svg class="catalog__section-item__icon icon icon-corner-right">
+                    <use href="images/icons/sprite.svg#corner-right-blue"></use>
+                  </svg>
+                  <h3 class="catalog__section-item__title u-text-h4">МЕТЧИКИ ИЗ&nbsp;ПОРОШКОВОЙ БЫСТРОРЕЖУЩЕЙ СТАЛИ</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('html/footer.html')
+
+      </main>
+
+      <div class="nw-modal" id="js-nw-modal-call" style="display: none;">
+        <div class="nw-modal__container">
+          <!-- <button class="nw-modal__close" aria-label="Закрыть модальное окно">&times;</button> -->
+      
+          <div class="nw-modal__content">
+            <div class="nw-modal__header">
+              <h2 class="nw-modal__title">Оставить заявку</h2>
+              <p class="nw-modal__description">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</p>
+            </div>
+          
+            <form action="#" method="POST" class="nw-modal__form">
+              
+              <fieldset class="nw-modal__form-group">
+                <label for="fullName" class="nw-modal__form-label--hidden">ФИО</label>
+                <input type="text" id="fullName" name="fullName" class="nw-modal__form-input" placeholder="ФИО">
+              </fieldset>
+              
+              <fieldset class="nw-modal__form-group">
+                  <label for="email" class="nw-modal__form-label--hidden">Email</label>
+                  <input type="email" id="email" name="email" class="nw-modal__form-input" placeholder="Email">
+              </fieldset>
+
+              <fieldset class="nw-modal__form-group">
+                  <label for="phone" class="nw-modal__form-label--hidden">Телефон</label>
+                  <input type="tel" id="phone" name="phone" class="nw-modal__form-input" placeholder="+7 999 999 99 99">
+              </fieldset>
+
+              <div class="nw-modal__form-group">
+                <label for="options" class="nw-modal__form-label--hidden">Выберите опцию</label>
+                <select id="options" name="options" class="nw-modal__form-select">
+                    <option value="" disabled selected>Выберите опцию</option>
+                    <option value="1">Вариант выбора</option>
+                    <option value="2">Вариант выбора номер 2</option>
+                    <option value="3">Вариант выбора номер 3</option>
+                </select>
+              </div>
+
+              <fieldset class="nw-modal__form-fieldset">
+                <label class="nw-modal__form-label">Заголовок</label>
+                <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check1" name="check_options" value="option1" class="nw-modal__form-checkbox">
+                    <label for="check1" class="nw-modal__form-check-label">Вариант выбора</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check2" name="check_options" value="option2" class="nw-modal__form-checkbox">
+                    <label for="check2" class="nw-modal__form-check-label">Вариант выбора номер 2</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check3" name="check_options" value="option3" class="nw-modal__form-checkbox" checked>
+                    <label for="check3" class="nw-modal__form-check-label">Еще один вариант выбора подлиннее</label>
+                </div>
+                  <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check4" name="check_options" value="option4" class="nw-modal__form-checkbox">
+                    <label for="check4" class="nw-modal__form-check-label">Вариант выбора</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="nw-modal__form-fieldset">
+                <label class="nw-modal__form-label">Заголовок</label>
+                <div class="nw-modal__form-check-group">
+                    <input type="radio" id="radio1" name="radio_options" value="option1" class="nw-modal__form-radio">
+                    <label for="radio1" class="nw-modal__form-check-label">Вариант выбора</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="radio" id="radio2" name="radio_options" value="option2" class="nw-modal__form-radio">
+                    <label for="radio2" class="nw-modal__form-check-label">Вариант выбора номер 2</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="radio" id="radio3" name="radio_options" value="option3" class="nw-modal__form-radio" checked>
+                    <label for="radio3" class="nw-modal__form-check-label">Еще один вариант выбора подлиннее</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="nw-modal__form-group">
+                <label for="comment" class="nw-modal__form-label--hidden">Комментарий</label>
+                <textarea id="comment" name="comment" class="nw-modal__form-textarea" placeholder="Комментарий"></textarea>
+              </fieldset>
+
+              <div class="nw-modal__form-group nw-modal__form-file-group">
+                <label for="file-upload" class="nw-modal__form-file-label">
+                    <span>Загрузить файлы (до 10 Мб)</span>
+                </label>
+                <input type="file" id="file-upload" name="files" class="nw-modal__form-file-input" multiple>
+                <span class="nw-modal__form-file-name">Название файла (10 Мб) &times;</span>
+              </div>
+
+              <div class="nw-modal__form-group">
+                <div class="nw-modal__form-policy">
+                  <input type="checkbox" id="agreement" name="agreement" required class="nw-modal__form-policy-checkbox">
+                  <label for="agreement" class="nw-modal__form-policy-label">
+                      Я даю <a href="#" class="nw-modal__form-policy-link">Согласие на обработку моих персональных данных</a> в целях обработки заявки и получения обратной связи
+                  </label>
+                </div>
+              </div>
+              
+              <button type="submit" class="nw-modal__form-submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

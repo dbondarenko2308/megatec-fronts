@@ -1,0 +1,25 @@
+@use "functions" as *;
+@use "mixins" as *;
+
+* {
+	&::-webkit-scrollbar {
+		inline-size: rem(5);
+		background-color: var(--color-grey-200);
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: rem(4);
+		box-shadow: inset 0 0 rem(6) rgba(#303332, 20%);
+		background: var(--color-grey-200);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(4);
+		border: none;
+		background-color: var(--color-neon-green-yellow);
+		transition: var(--bs-transition);
+		@include any-hover {
+			background-color: var(--color-neon-green-yellow-light);
+		}
+	}
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Каталог'
+  })
+  <body>
+    
+    <div id="smooth-wrapper">
+      @@include('html/header.html')
+
+      <main id="smooth-content" class="page">
+        <div data-observ></div>
+
+        @@include('html/breadcrumbs.html', {
+          'title': 'Каталог'
+        })
+
+        <section class="catalog u-margin-bottom-l">
+          <div class="catalog__container">
+            <div class="catalog__section">
+              <div class="catalog__section-caption">
+                <h1 class="u-text-h1 u-text-color-black">Наружное точение</h1>
+              </div>
+            </div>
+            <div class="catalog__elements">
+              <div class="catalog__aside">
+                <div class="catalog__filter">
+                  <div class="catalog__elements-aside__filter-head js-toggle-aside-filter">
+                    <svg class="icon icon-filter">
+                      <use href="images/icons/sprite.svg#filter"></use>
+                    </svg>
+                    <h4 class="u-text-h4 u-text-color-green-900">Фильтры</h4>
+                  </div>
+                  <form action="#" class="filter js-catalog-filter-mobile">
+                    <div class="filter__wrap">
+                      <div class="filter__head">
+                        <h4 class="u-text-h4 u-text-color-black">Фильтр</h4>
+                        <svg class="icon icon-close js-close-aside-filter">
+                          <use href="images/icons/sprite.svg#close"></use>
+                        </svg>
+                      </div>
+                      <div class="filter__checkbox">
+                        <div class="filter__title">
+                          <h4 class="u-text-lg-18 u-text-color-black">Сечение державки</h4>
+                        </div>
+                        <div class="filter__checkbox-list">
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId0" type="checkbox">
+                            <label for="testId0" class="u-text-sm u-text-color-black u-text-weight-regular">2020</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId1" type="checkbox">
+                            <label for="testId1" class="u-text-sm u-text-color-black u-text-weight-regular">2525</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId2" type="checkbox">
+                            <label for="testId2" class="u-text-sm u-text-color-black u-text-weight-regular">3232</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId3" type="checkbox">
+                            <label for="testId3" class="u-text-sm u-text-color-black u-text-weight-regular">4040</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId4" type="checkbox">
+                            <label for="testId4" class="u-text-sm u-text-color-black u-text-weight-regular">5050</label>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="filter__checkbox">
+                        <div class="filter__title">
+                          <h4 class="u-text-lg-18 u-text-color-black">Форма пластины</h4>
+                        </div>
+                        <div class="filter__checkbox-list">
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId5" type="checkbox">
+                            <label for="testId5" class="u-text-sm u-text-color-black u-text-weight-regular">C-ромбическая 80°</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId6" type="checkbox">
+                            <label for="testId6" class="u-text-sm u-text-color-black u-text-weight-regular">D-ромбическая 55°</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId7" type="checkbox">
+                            <label for="testId7" class="u-text-sm u-text-color-black u-text-weight-regular">V-ромбическая 35°</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId8" type="checkbox">
+                            <label for="testId8" class="u-text-sm u-text-color-black u-text-weight-regular">W-тригональная</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId9" type="checkbox">
+                            <label for="testId9" class="u-text-sm u-text-color-black u-text-weight-regular">S-квадратная</label>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="filter__checkbox">
+                        <div class="filter__title">
+                          <h4 class="u-text-lg-18 u-text-color-black">Форма пластины</h4>
+                        </div>
+                        <div class="filter__checkbox-list">
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId10" type="checkbox">
+                            <label for="testId10" class="u-text-sm u-text-color-black u-text-weight-regular">D - двойной прижим</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId11" type="checkbox">
+                            <label for="testId11" class="u-text-sm u-text-color-black u-text-weight-regular">P - прижим рычагом</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId12" type="checkbox">
+                            <label for="testId12" class="u-text-sm u-text-color-black u-text-weight-regular">M - двухвинтовое зажатие</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId13" type="checkbox">
+                            <label for="testId13" class="u-text-sm u-text-color-black u-text-weight-regular">S - зажим винтом</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId14" type="checkbox">
+                            <label for="testId14" class="u-text-sm u-text-color-black u-text-weight-regular">C - верхний прижим</label>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="filter__checkbox">
+                        <div class="filter__title">
+                          <h4 class="u-text-lg-18 u-text-color-black">Тип исполнения</h4>
+                        </div>
+                        <div class="filter__checkbox-list">
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId15" type="checkbox">
+                            <label for="testId15" class="u-text-sm u-text-color-black u-text-weight-regular">R</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId16" type="checkbox">
+                            <label for="testId16" class="u-text-sm u-text-color-black u-text-weight-regular">L</label>
+                          </fieldset>
+                          <fieldset class="filter__checkbox-item">
+                            <input id="testId17" type="checkbox">
+                            <label for="testId17" class="u-text-sm u-text-color-black u-text-weight-regular">N - нейтральное</label>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="filter__button">
+                        <button class="button button-color--blue button-size-lg">Сбросить фильтры</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="catalog__elements-content">
+                <div class="catalog__elements-list">
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 2020 K 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 2525 M 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 3232 P 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 3232 P 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 2525 M 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 2020 K 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 2020 K 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 2525 M 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__elements-item">
+                    <div class="catalog__elements-item__image">
+                      <img src="./images/catalog/catalog-element-item-1.png" alt="">
+                    </div>
+                    <div class="catalog__elements-item__char">
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">Ø20</span>
+                      <span class="u-text-md u-text-weight-regular u-text-color-black">95°</span>
+                    </div>
+                    <div class="catalog__elements-item__title">
+                      <h2 class="u-text-h3 u-text-color-blue">DCLNR 3232 P 12</h2>
+                    </div>
+                    <div class="catalog__elements-item__basket">
+                      <div class="basket__quantity js-basket-quantity">
+                        <button class="basket__quantity-btn js-quantity-minus" type="button" aria-label="Уменьшить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 10H15" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                        <input class="basket__quantity-val" type="number" min="0" value="0">
+                        <button class="basket__quantity-btn js-quantity-plus" type="button" aria-label="Увеличить количество">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16669V15.8334" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.16602 10H15.8327" stroke="#6B6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="basket__button">
+                        <a href="#" class="button button-color--bluefill button-size-lg js-basket-button">
+                          <span>В корзину</span>
+                          <svg class="icon icon-basket">
+                            <use href="images/icons/sprite.svg#basket-white"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__elements-more">
+                  <a href="#" class="button button-color--blue button-size-lg">Показать ещё</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('html/footer.html')
+
+      </main>
+
+      <div class="nw-modal" id="js-nw-modal-call" style="display: none;">
+        <div class="nw-modal__container">
+          <!-- <button class="nw-modal__close" aria-label="Закрыть модальное окно">&times;</button> -->
+      
+          <div class="nw-modal__content">
+            <div class="nw-modal__header">
+              <h2 class="nw-modal__title">Оставить заявку</h2>
+              <p class="nw-modal__description">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</p>
+            </div>
+          
+            <form action="#" method="POST" class="nw-modal__form">
+              
+              <fieldset class="nw-modal__form-group">
+                <label for="fullName" class="nw-modal__form-label--hidden">ФИО</label>
+                <input type="text" id="fullName" name="fullName" class="nw-modal__form-input" placeholder="ФИО">
+              </fieldset>
+              
+              <fieldset class="nw-modal__form-group">
+                  <label for="email" class="nw-modal__form-label--hidden">Email</label>
+                  <input type="email" id="email" name="email" class="nw-modal__form-input" placeholder="Email">
+              </fieldset>
+
+              <fieldset class="nw-modal__form-group">
+                  <label for="phone" class="nw-modal__form-label--hidden">Телефон</label>
+                  <input type="tel" id="phone" name="phone" class="nw-modal__form-input" placeholder="+7 999 999 99 99">
+              </fieldset>
+
+              <div class="nw-modal__form-group">
+                <label for="options" class="nw-modal__form-label--hidden">Выберите опцию</label>
+                <select id="options" name="options" class="nw-modal__form-select">
+                    <option value="" disabled selected>Выберите опцию</option>
+                    <option value="1">Вариант выбора</option>
+                    <option value="2">Вариант выбора номер 2</option>
+                    <option value="3">Вариант выбора номер 3</option>
+                </select>
+              </div>
+
+              <fieldset class="nw-modal__form-fieldset">
+                <label class="nw-modal__form-label">Заголовок</label>
+                <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check1" name="check_options" value="option1" class="nw-modal__form-checkbox">
+                    <label for="check1" class="nw-modal__form-check-label">Вариант выбора</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check2" name="check_options" value="option2" class="nw-modal__form-checkbox">
+                    <label for="check2" class="nw-modal__form-check-label">Вариант выбора номер 2</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check3" name="check_options" value="option3" class="nw-modal__form-checkbox" checked>
+                    <label for="check3" class="nw-modal__form-check-label">Еще один вариант выбора подлиннее</label>
+                </div>
+                  <div class="nw-modal__form-check-group">
+                    <input type="checkbox" id="check4" name="check_options" value="option4" class="nw-modal__form-checkbox">
+                    <label for="check4" class="nw-modal__form-check-label">Вариант выбора</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="nw-modal__form-fieldset">
+                <label class="nw-modal__form-label">Заголовок</label>
+                <div class="nw-modal__form-check-group">
+                    <input type="radio" id="radio1" name="radio_options" value="option1" class="nw-modal__form-radio">
+                    <label for="radio1" class="nw-modal__form-check-label">Вариант выбора</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="radio" id="radio2" name="radio_options" value="option2" class="nw-modal__form-radio">
+                    <label for="radio2" class="nw-modal__form-check-label">Вариант выбора номер 2</label>
+                </div>
+                <div class="nw-modal__form-check-group">
+                    <input type="radio" id="radio3" name="radio_options" value="option3" class="nw-modal__form-radio" checked>
+                    <label for="radio3" class="nw-modal__form-check-label">Еще один вариант выбора подлиннее</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="nw-modal__form-group">
+                <label for="comment" class="nw-modal__form-label--hidden">Комментарий</label>
+                <textarea id="comment" name="comment" class="nw-modal__form-textarea" placeholder="Комментарий"></textarea>
+              </fieldset>
+
+              <div class="nw-modal__form-group nw-modal__form-file-group">
+                <label for="file-upload" class="nw-modal__form-file-label">
+                    <span>Загрузить файлы (до 10 Мб)</span>
+                </label>
+                <input type="file" id="file-upload" name="files" class="nw-modal__form-file-input" multiple>
+                <span class="nw-modal__form-file-name">Название файла (10 Мб) &times;</span>
+              </div>
+
+              <div class="nw-modal__form-group">
+                <div class="nw-modal__form-policy">
+                  <input type="checkbox" id="agreement" name="agreement" required class="nw-modal__form-policy-checkbox">
+                  <label for="agreement" class="nw-modal__form-policy-label">
+                      Я даю <a href="#" class="nw-modal__form-policy-link">Согласие на обработку моих персональных данных</a> в целях обработки заявки и получения обратной связи
+                  </label>
+                </div>
+              </div>
+              
+              <button type="submit" class="nw-modal__form-submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

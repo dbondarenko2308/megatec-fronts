@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { 'title': 'Дилеры' })
+	<body>
+		<div id="smooth-wrapper">
+			@@include('html/header.html')
+
+			<main id="smooth-content" class="page">
+				<div data-observ></div>
+
+				@@include('html/breadcrumbs.html', { 'title': 'Дилеры' })
+
+				<div class="dealers">
+					<div class="dealers__container">
+						<h1 class="dealers__title u-text-color-black u-text-h1">Дилеры</h1>
+
+						<div class="dealers__top">
+							<span>Авторизованные дилеры</span>
+							<span>Город</span>
+							<span>Адрес</span>
+							<span>Телефон</span>
+							<span>Почта</span>
+						</div>
+
+						<div class="dealers__items">
+							<div class="dealers__item">
+								<span>ООО «Промас»</span>
+								<span>Воронеж</span>
+								<span>ул.. Бахметьева, д.. 2Б, офис 709</span>
+								<span>+7(473) 212–08–31</span>
+								<span>info@promas-tools.ru</span>
+							</div>
+							<div class="dealers__item">
+								<span>ООО «Промас»</span>
+								<span>Пенза</span>
+								<span>ул.. Карпинского 175</span>
+								<span>+7(473) 212–08–31</span>
+								<span>svarga-penza@mail.ru</span>
+							</div>
+							<div class="dealers__item">
+								<span>ООО «Промас»</span>
+								<span>Воронеж</span>
+								<span>ул.. Бахметьева, д.. 2Б, офис 709</span>
+								<span>+7(473) 212–08–31</span>
+								<span>info@promas-tools.ru</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				@@include('html/footer-feed.html')
+			</main>
+
+		</div>
+	</body>
+</html>

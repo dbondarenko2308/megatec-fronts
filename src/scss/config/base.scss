@@ -1,0 +1,102 @@
+@use 'vars' as *;
+@use 'functions' as *;
+@use 'mixins' as *;
+@use 'keyframes' as *;
+
+body {
+	background-color: var(--color-white);
+}
+
+.fancybox__backdrop {
+	opacity: 0.8 !important;
+}
+
+// Стили отзывчивых картинок (IBG) ============================================
+.ibg {
+	position: relative;
+
+	img {
+		position: absolute;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		object-fit: cover;
+		block-size: 100%;
+		inline-size: 100%;
+	}
+
+	&_contain {
+		img {
+			object-fit: contain;
+		}
+	}
+}
+
+// Оболочка ===================================================================
+#smooth-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-block-size: 100%;
+	overflow: hidden !important;
+}
+
+.page {
+	position: relative;
+	flex: 1 1 auto;
+	padding-top: auto-clamp(85, 108);
+
+	@include media-mx(767) {
+		padding-top: rem(85);
+	}
+
+	[data-observ] {
+		pointer-events: none;
+		position: absolute;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		block-size: rem(2);
+		inline-size: 100%;
+		background: transparent;
+	}
+}
+
+.icon {
+	// flex: 0 0 rem(24);
+	display: inline-block;
+	width: rem(24);
+	height: rem(24);
+	transition: var(--bs-transition);
+
+	> img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	&-header-logo {
+		width: rem(130);
+		height: rem(38);
+	}
+
+	&-develop-logo {
+		width: rem(110);
+		height: rem(12);
+	}
+
+	&-slash {
+		width: rem(7);
+		height: rem(14);
+	}
+}
+
+// page-content
+
+.fadein {
+	opacity: 0;
+	transition: all 1.5s;
+	transform: translate(0, 200px);
+}
+
+.fadein.visible {
+	opacity: 1;
+	transform: translate(0, 0);
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { 'title': 'Главная' })
+	<body>
+		<div id="smooth-wrapper">
+			@@include('html/header.html')
+
+			<main id="smooth-content" class="page">
+				<div data-observ></div>
+
+				<section class="home u-margin-bottom-l ">
+					<div class="home__container">
+						<div class="home__slider swiper js-home-slider">
+							<div class="swiper-wrapper">
+								<div class="home__slider-item item" style="background-image: url(./images/home/home-banner-1.png)">
+									<h2 class="home__slider-item__title u-text-h1 u-text-color-white">Мы&nbsp;&mdash; производитель</h2>
+									<div class="home__slider-item__text">
+										<p class="u-text-h3 u-text-color-white">Официальный производитель MEGATEC&trade;</p>
+										<p class="u-text-xl u-text-color-white">
+											Компания &laquo;МЕГАТУЛС&raquo;&nbsp;&mdash; правообладатель бренда и&nbsp;разработчик всей
+											линейки металлорежущего инструмента. Мы&nbsp;контролируем каждый этап: от&nbsp;идеи
+											до&nbsp;готового продукта.
+										</p>
+									</div>
+									<a href="#" class="button button-size-lg button-color--redfill">Каталог продукции</a>
+								</div>
+								<div class="home__slider-item item" style="background-image: url(./images/home/home-banner-2.png)">
+									<h2 class="home__slider-item__title u-text-h1 u-text-color-white">
+										Быстро. Надёжно. Всегда в&nbsp;наличии
+									</h2>
+									<div class="home__slider-item__text">
+										<p class="u-text-h3 u-text-color-white">
+											10&nbsp;000+ наименований на&nbsp;складе в&nbsp;Санкт-Петербурге
+										</p>
+										<p class="u-text-xl u-text-color-white">
+											Прямая логистика, быстрая отгрузка, курьерская доставка по&nbsp;всей России и&nbsp;странам
+											Таможенного союза.
+										</p>
+									</div>
+									<a href="#" class="button button-size-lg button-color--redfill">Каталог продукции</a>
+								</div>
+								<div class="home__slider-item item" style="background-image: url(./images/home/home-banner-3.png)">
+									<h2 class="home__slider-item__title u-text-h1 u-text-color-white">
+										Мы&nbsp;&mdash; ваш технологический партнёр
+									</h2>
+									<div class="home__slider-item__text">
+										<p class="u-text-h3 u-text-color-white">Техническая поддержка, обучение, внедрение</p>
+										<p class="u-text-xl u-text-color-white">
+											Подбор инструмента, выезды, тестирования, обучение персонала и&nbsp;сопровождение на&nbsp;всех
+											этапах. Мы&nbsp;предлагаем больше, чем просто инструмент.
+										</p>
+									</div>
+									<a href="#" class="button button-size-lg button-color--redfill">Каталог продукции</a>
+								</div>
+								<div class="home__slider-item item" style="background-image: url(./images/home/home-banner-4.png)">
+									<h2 class="home__slider-item__title u-text-h1 u-text-color-white">Европейские технологии</h2>
+									<div class="home__slider-item__text">
+										<p class="u-text-h3 u-text-color-white">Премиальный инструмент мирового уровня</p>
+										<p class="u-text-xl u-text-color-white">
+											Производство MEGATEC&trade; ведётся на&nbsp;высокотехнологичных предприятиях Германии, Австрии
+											и&nbsp;Италии в&nbsp;сотрудничестве с&nbsp;ведущими R&amp;D-центрами.
+										</p>
+									</div>
+									<a href="#" class="button button-size-lg button-color--redfill">Каталог продукции</a>
+								</div>
+							</div>
+							<div class="home__slider-pagination"></div>
+							<div class="home__slider-navigation">
+								<div class="home__slider-navigation__item home__slider-navigation--prev">
+									<svg class="icon icon-chevron-left">
+										<use href="images/icons/sprite.svg#chevron-left-white"></use>
+									</svg>
+								</div>
+								<div class="home__slider-navigation__item home__slider-navigation--next">
+									<svg class="icon icon-chevron-right">
+										<use href="images/icons/sprite.svg#chevron-right-white"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="block__about u-margin-bottom-l fadein">
+					<div class="block__about-container">
+						<div class="block__about-caption">
+							<span class="u-text-sm u-text-color-red-light">О&nbsp;компании</span>
+							<h2 class="u-text-h2 u-text-color-black">Качество&nbsp;&mdash; это про Мегатулс</h2>
+						</div>
+						<div class="block__about-box">
+							<div class="block__about-text u-text-md u-text-color-grey-700">
+								<p>
+									ООО &laquo;Компания МЕГАТУЛС&raquo;&nbsp;&mdash; официальный производитель металлорежущего инструмента
+									MEGATEC&trade; в&nbsp;России и&nbsp;странах Таможенного союза.
+								</p>
+								<p>
+									Мы&nbsp;являемся правообладателем товарного знака MEGATEC&trade; и&nbsp;полностью отвечаем
+									за&nbsp;разработку, производство и&nbsp;контроль качества всей линейки продукции&nbsp;&mdash;
+									от&nbsp;идеи до&nbsp;готового продукта.
+								</p>
+							</div>
+							<a href="#" class="button button-color--redfill button-size-lg">Подробнее о&nbsp;Мегатулс</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="catalog u-margin-bottom-l fadein">
+					<div class="catalog__container">
+						<div class="catalog__caption">
+							<span class="u-text-sm u-text-color-red-light">Категории</span>
+							<h2 class="u-text-h2 u-text-color-black">Премиальная Продукция</h2>
+						</div>
+						<div class="catalog__section">
+							<div class="catalog__section-list">
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-1.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">ТОКАРНЫЕ ДЕРЖАВКИ</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-2.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">Антивибрационные державки</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-3.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">ТОКАРНЫЕ ПЛАСТИНЫ</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-4.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">ОТРЕЗКА И&nbsp;ОБРАБОТКА КАНАВОК</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-5.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">РЕЗЬБОНАРЕЗНОЙ ТОКАРНЫЙ ИНСТРУМЕНТ</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-6.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">ЦЕЛЬНЫЙ ТВЕРДОСПЛАВНЫЙ ИНСТРУМЕНТ</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-7.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">ФРЕЗЫ СО&nbsp;СМЕННЫМИ МНОГОГРАННЫМИ ПЛАСТИНАМИ</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-8.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">СВЕРЛА СО&nbsp;СМЕННЫМИ МНОГОГРАННЫМИ ПЛАСТИНАМИ</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-9.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">Резьбофрезы</h3>
+								</a>
+								<a href="#" class="catalog__section-item">
+									<div class="catalog__section-item__image">
+										<img src="./images/catalog/catalog-section-item-10.png" alt="" />
+									</div>
+									<svg class="catalog__section-item__icon icon icon-corner-right">
+										<use href="images/icons/sprite.svg#corner-right-blue"></use>
+									</svg>
+									<h3 class="catalog__section-item__title u-text-h4">МЕТЧИКИ ИЗ&nbsp;ПОРОШКОВОЙ БЫСТРОРЕЖУЩЕЙ СТАЛИ</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="block__tools u-margin-bottom-l fadein" style="background-image: url(./images/tools/tools-bg-1.png)">
+					<div class="block__tools-container">
+						<div class="block__tools-caption">
+							<span class="u-text-sm u-text-color-white">Инструмент MEGATEC&trade;</span>
+							<h2 class="block__tools-caption__text u-text-h2 u-text-color-white">Премиальный инструмент мирового уровня</h2>
+						</div>
+						<div class="block__tools-box">
+							<div class="block__tools-text">
+								<p class="u-text-h4 u-text-color-white">
+									Инструмент MEGATEC&trade; создаётся в&nbsp;соответствии с&nbsp;самыми высокими требованиями&nbsp;к:
+								</p>
+								<ol>
+									<li class="u-text-xl u-text-color-white">Точности и&nbsp;стабильности обработки,</li>
+									<li class="u-text-xl u-text-color-white">Надёжности в&nbsp;эксплуатации,</li>
+									<li class="u-text-xl u-text-color-white">Ресурсоэффективности и&nbsp;износостойкости.</li>
+								</ol>
+							</div>
+							<div class="block__tools-text">
+								<p class="u-text-h4 u-text-color-white">Это профессиональный инструмент, который обеспечивает:</p>
+								<ol>
+									<li class="u-text-xl u-text-color-white">Высокую производительность,</li>
+									<li class="u-text-xl u-text-color-white">Длительный срок службы,</li>
+									<li class="u-text-xl u-text-color-white">
+										Стабильный результат даже в&nbsp;условиях сложного производства.
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="block__advantages u-margin-bottom-l fadein">
+					<div class="block__advantages-container">
+						<div class="block__advantages-caption">
+							<span class="u-text-sm u-text-color-white">Наши преимущества</span>
+							<h2 class="block__advantages-caption__text u-text-h2 u-text-color-white">
+								Компания &laquo;МЕГАТУЛС&raquo; строит партнёрские отношения с&nbsp;клиентами на&nbsp;принципах
+								профессионализма, открытости и&nbsp;технической поддержки
+							</h2>
+						</div>
+						<div class="block__advantages-content">
+							<div class="block__advantages-content__box">
+								<div class="block__advantages-card">
+									<div class="block__advantages-card__icon">
+										<img src="./images/advantages/advantages-icon-1.svg" alt="" />
+									</div>
+									<div class="block__advantages-card__text">
+										<h3 class="u-text-h4 u-text-color-white">Собственный склад</h3>
+										<p class="u-text-sm u-text-color-white">
+											Все инструменты в&nbsp;наличии хранятся на&nbsp;складе в&nbsp;Санкт-Петербурге
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="block__advantages-content__box">
+								<div class="block__advantages-card">
+									<div class="block__advantages-card__icon">
+										<img src="./images/advantages/advantages-icon-2.svg" alt="" />
+									</div>
+									<div class="block__advantages-card__text">
+										<h3 class="u-text-h4 u-text-color-white">Быстрая доставка</h3>
+										<p class="u-text-sm u-text-color-white">
+											Качественная, своевременная курьерская доставка во&nbsp;все регионы
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="block__advantages-content__box">
+								<div class="block__advantages-card">
+									<div class="block__advantages-card__icon">
+										<img src="./images/advantages/advantages-icon-3.svg" alt="" />
+									</div>
+									<div class="block__advantages-card__text">
+										<h3 class="u-text-h4 u-text-color-white">Техническая поддержка</h3>
+										<p class="u-text-sm u-text-color-white">
+											Поддержка и&nbsp;сопровождение на&nbsp;всех этапах. Проводим обучение по&nbsp;работе
+											с&nbsp;инструментом
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="block__advantages-content__box">
+								<div class="block__advantages-card">
+									<div class="block__advantages-card__icon">
+										<img src="./images/advantages/advantages-icon-4.svg" alt="" />
+									</div>
+									<div class="block__advantages-card__text">
+										<h3 class="u-text-h4 u-text-color-white">Инжиниринг</h3>
+										<p class="u-text-sm u-text-color-white">
+											Комплексная разработка технологических решений в&nbsp;области металлообработки
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				@@include('html/footer.html')
+			</main>
+
+			<div class="nw-modal" id="js-nw-modal-call" style="display: none">
+				<div class="nw-modal__container">
+					<!-- <button class="nw-modal__close" aria-label="Закрыть модальное окно">&times;</button> -->
+
+					<div class="nw-modal__content">
+						<div class="nw-modal__header">
+							<h2 class="nw-modal__title">Оставить заявку</h2>
+							<p class="nw-modal__description">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</p>
+						</div>
+
+						<form action="#" method="POST" class="nw-modal__form">
+							<fieldset class="nw-modal__form-group">
+								<label for="fullName" class="nw-modal__form-label--hidden">ФИО</label>
+								<input type="text" id="fullName" name="fullName" class="nw-modal__form-input" placeholder="ФИО" />
+							</fieldset>
+
+							<fieldset class="nw-modal__form-group">
+								<label for="email" class="nw-modal__form-label--hidden">Email</label>
+								<input type="email" id="email" name="email" class="nw-modal__form-input" placeholder="Email" />
+							</fieldset>
+
+							<fieldset class="nw-modal__form-group">
+								<label for="phone" class="nw-modal__form-label--hidden">Телефон</label>
+								<input type="tel" id="phone" name="phone" class="nw-modal__form-input" placeholder="+7 999 999 99 99" />
+							</fieldset>
+
+							<div class="nw-modal__form-group">
+								<label for="options" class="nw-modal__form-label--hidden">Выберите опцию</label>
+								<select id="options" name="options" class="nw-modal__form-select">
+									<option value="" disabled selected>Выберите опцию</option>
+									<option value="1">Вариант выбора</option>
+									<option value="2">Вариант выбора номер 2</option>
+									<option value="3">Вариант выбора номер 3</option>
+								</select>
+							</div>
+
+							<fieldset class="nw-modal__form-fieldset">
+								<label class="nw-modal__form-label">Заголовок</label>
+								<div class="nw-modal__form-check-group">
+									<input
+										type="checkbox"
+										id="check1"
+										name="check_options"
+										value="option1"
+										class="nw-modal__form-checkbox"
+									/>
+									<label for="check1" class="nw-modal__form-check-label">Вариант выбора</label>
+								</div>
+								<div class="nw-modal__form-check-group">
+									<input
+										type="checkbox"
+										id="check2"
+										name="check_options"
+										value="option2"
+										class="nw-modal__form-checkbox"
+									/>
+									<label for="check2" class="nw-modal__form-check-label">Вариант выбора номер 2</label>
+								</div>
+								<div class="nw-modal__form-check-group">
+									<input
+										type="checkbox"
+										id="check3"
+										name="check_options"
+										value="option3"
+										class="nw-modal__form-checkbox"
+										checked
+									/>
+									<label for="check3" class="nw-modal__form-check-label">Еще один вариант выбора подлиннее</label>
+								</div>
+								<div class="nw-modal__form-check-group">
+									<input
+										type="checkbox"
+										id="check4"
+										name="check_options"
+										value="option4"
+										class="nw-modal__form-checkbox"
+									/>
+									<label for="check4" class="nw-modal__form-check-label">Вариант выбора</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="nw-modal__form-fieldset">
+								<label class="nw-modal__form-label">Заголовок</label>
+								<div class="nw-modal__form-check-group">
+									<input type="radio" id="radio1" name="radio_options" value="option1" class="nw-modal__form-radio" />
+									<label for="radio1" class="nw-modal__form-check-label">Вариант выбора</label>
+								</div>
+								<div class="nw-modal__form-check-group">
+									<input type="radio" id="radio2" name="radio_options" value="option2" class="nw-modal__form-radio" />
+									<label for="radio2" class="nw-modal__form-check-label">Вариант выбора номер 2</label>
+								</div>
+								<div class="nw-modal__form-check-group">
+									<input
+										type="radio"
+										id="radio3"
+										name="radio_options"
+										value="option3"
+										class="nw-modal__form-radio"
+										checked
+									/>
+									<label for="radio3" class="nw-modal__form-check-label">Еще один вариант выбора подлиннее</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="nw-modal__form-group">
+								<label for="comment" class="nw-modal__form-label--hidden">Комментарий</label>
+								<textarea id="comment" name="comment" class="nw-modal__form-textarea" placeholder="Комментарий"></textarea>
+							</fieldset>
+
+							<div class="nw-modal__form-group nw-modal__form-file-group">
+								<label for="file-upload" class="nw-modal__form-file-label">
+									<span>Загрузить файлы (до 10 Мб)</span>
+								</label>
+								<input type="file" id="file-upload" name="files" class="nw-modal__form-file-input" multiple />
+								<span class="nw-modal__form-file-name">Название файла (10 Мб) &times;</span>
+							</div>
+
+							<div class="nw-modal__form-group">
+								<div class="nw-modal__form-policy">
+									<input
+										type="checkbox"
+										id="agreement"
+										name="agreement"
+										required
+										class="nw-modal__form-policy-checkbox"
+									/>
+									<label for="agreement" class="nw-modal__form-policy-label">
+										Я даю
+										<a href="#" class="nw-modal__form-policy-link">Согласие на обработку моих персональных данных</a> в
+										целях обработки заявки и получения обратной связи
+									</label>
+								</div>
+							</div>
+
+							<button type="submit" class="nw-modal__form-submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

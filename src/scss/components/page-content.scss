@@ -1,0 +1,82 @@
+@use '../config' as *;
+
+.page-content {
+	margin-bottom: 60px;
+
+	&__container {
+		@include make-container();
+	}
+
+	&__title {
+		margin-bottom: 60px;
+
+		@media only screen and (max-width: 991px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	p {
+		font-size: 20px;
+		color: #6b6b6b;
+		margin-bottom: 20px;
+		line-height: 130%;
+
+		@media only screen and (max-width: 991px) {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+	}
+
+	h4 {
+		font-size: 32px;
+		font-family: var(--sc-font-family);
+		font-variation-settings: var(--font-weight-500);
+    margin-bottom: 30px;
+    margin-top: 60px;
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 15px;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+	}
+
+	ul {
+		margin-bottom: 20px;
+
+		li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 10px;
+			font-size: 20px;
+			color: #6b6b6b;
+			line-height: 130%;
+
+			@media only screen and (max-width: 991px) {
+				font-size: 16px;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				top: 50%;
+				transform: translateY(-50%);
+				background: #2145a0;
+				left: 0;
+
+				@media only screen and (max-width: 991px) {
+					top: 5px;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+}

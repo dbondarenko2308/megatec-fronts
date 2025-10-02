@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { 'title': 'Контакты' })
+	<body>
+		<div id="smooth-wrapper">
+			@@include('html/header.html')
+
+			<main id="smooth-content" class="page">
+				<div data-observ></div>
+
+				@@include('html/breadcrumbs.html', { 'title': 'Контакты' })
+
+				<div class="contacts">
+					<div class="contacts__container">
+						<h1 class="contacts__title u-text-color-black u-text-h1">Контакты</h1>
+
+						<div class="contacts__info">
+							<div class="contacts__items">
+								<div class="contacts__item">
+									<span class="u-text-h4">Телефон</span>
+									<p><a href="#">+7 812 633-07-17</a>(многоканальный)</p>
+									<p><a href="#">+7 812 633-07-18</a>(ФАКС)</p>
+								</div>
+								<div class="contacts__item">
+									<span class="u-text-h4">Почта</span>
+									<a href="#">+info@megatools.ru</a>
+								</div>
+								<div class="contacts__item">
+									<span class="u-text-h4">Адрес</span>
+									<p>197341, Санкт-Петербург, Коломяжский пр., д.. 33, Б/Ц «СОДРУЖЕСТВО»</p>
+								</div>
+							</div>
+
+							<div class="contacts__map">
+								<div style="position: relative; overflow: hidden">
+									<iframe
+										src="https://yandex.ru/map-widget/v1/?ll=30.294984%2C60.014645&mode=whatshere&whatshere%5Bpoint%5D=30.294874%2C60.014675&whatshere%5Bzoom%5D=17&z=18.52"
+										width="100%"
+										height="100%"
+										frameborder="1"
+										allowfullscreen="true"
+										style="position: relative"
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				@@include('html/footer-feed.html')
+			</main>
+
+		</div>
+	</body>
+</html>

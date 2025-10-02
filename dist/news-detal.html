@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+	<style>
+		html {
+			opacity: 0;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>«МЕТАЛЛООБРАБОТКА-2022» 23.05.22–27.05.2022</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/libs.min.js" defer="defer"></script>
+	<script src="js/main.js" defer="defer"></script>
+</head>
+
+	<body>
+		<div id="smooth-wrapper">
+			<header class="header" data-lp>
+	<div class="header__container">
+		<div class="header__content">
+			<div class="header__left">
+				<div class="header__logo">
+					<svg class="icon icon-header-logo">
+						<use href="images/icons/sprite.svg#header-logotype"></use>
+					</svg>
+				</div>
+				<nav class="header__menu">
+					<li class="header__menu-item is-dropdown">
+						<a href="#">
+							<span>Каталог продукции</span>
+							<svg class="icon icon-chevron-down">
+								<use href="images/icons/sprite.svg#chevron-down"></use>
+							</svg>
+						</a>
+						<ul class="header__submenu">
+							<li class="is-dropdown">
+								<a href="#">
+									<span>Токарные державки</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M10 8L14 12L10 16" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<ul class="header__submenu">
+									<li>
+										<a href="#">Сборные державки</a>
+										<ul class="padding">
+											<li><a href="#">Бортштанги</a></li>
+											<li><a href="#">Бортштанги</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Цельные микродержавки</a></li>
+								</ul>
+							</li>
+							<li class="is-dropdown">
+								<a href="#">
+									<span>Токарные державки</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M10 8L14 12L10 16" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<ul class="header__submenu">
+									<li>
+										<a href="#">Сборные державки</a>
+									</li>
+									<li><a href="#">Цельные микродержавки</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Токарные Пластины</a></li>
+							<li><a href="#">Отрезка и обработка канавок</a></li>
+							<li><a href="#">Токарные Пластины</a></li>
+							<li><a href="#">Отрезка и обработка канавок</a></li>
+							<li><a href="#">Токарные Пластины</a></li>
+							<li><a href="#">Отрезка и обработка канавок</a></li>
+							<li><a href="#">Токарные Пластины</a></li>
+							<li><a href="#">Отрезка и обработка канавок</a></li>
+							<li><a href="#">Токарные Пластины</a></li>
+							<li><a href="#">Отрезка и обработка канавок</a></li>
+						</ul>
+					</li>
+					<li class="header__menu-item">
+						<a href="#">Дилеры</a>
+					</li>
+					<li class="header__menu-item is-dropdown">
+						<a href="#">О компании</a>
+						<ul class="header__submenu">
+							<li><a href="#">История</a></li>
+							<li><a href="#">Команда</a></li>
+						</ul>
+					</li>
+					<li class="header__menu-item"><a href="#">Контакты</a></li>
+				</nav>
+			</div>
+			<div class="header__right">
+				<div class="header__call">
+					<a href="tel:+78126330717" class="header__call-phone">+7 812 633-07-17</a>
+					<a href="#" class="button button-size-lg button-color--red">
+						<span>Заказать звонок</span>
+						<img src="../images/phone.svg" alt="">
+					</a>
+				</div>
+				<a href="#" class="button button-size-lg button-color--grey header__download" download>
+					<span>Скачать каталог</span>
+					<svg class="icon icon-download">
+						<use href="images/icons/sprite.svg#download"></use>
+					</svg>
+				</a>
+				<a href="#" class="button button-color--grey button-size-md header__basket">
+					<svg class="icon icon-basket">
+						<use href="images/icons/sprite.svg#basket"></use>
+					</svg>
+					<span class="header__basket-count is-visible">100</span>
+					<!-- 
+						is-visible - класс добавляется после добавление товара в корзину.
+						Ограничить на бэкенде максимальное отображаемое количество - 999, если больше добавляем + к максимальному значению
+					-->
+				</a>
+				<a href="#" class="button button-color--grey button-size-md header__search">
+					<svg class="icon icon-search">
+						<use href="images/icons/sprite.svg#search"></use>
+					</svg>
+				</a>
+				<div class="header__lang">
+					<a href="#" class="header__lang-item is-active">Рус</a>
+					<a href="#" class="header__lang-item">Eng</a>
+				</div>
+				<div class="header__burger js-burger-menu">
+  <button class="icon-menu">
+    <span></span>
+  </button>
+</div>
+			</div>
+		</div>
+		<div class="header__mobile js-mobile-menu">
+			<div class="header__mobile-wrapper js-header-mobile">
+				<!-- header-mobile -->
+
+				<div class="header-mobile__search">
+					<div class="header-mobile__top">
+						<form action="#">
+							<input type="text" placeholder="Поиск">
+							<div class="header-mobile__top--close">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M18 6L6 18" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M6 6L18 18" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<button class="button header-search__btn">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M15.3536 14.6464C15.1583 14.4512 14.8417 14.4512 14.6464 14.6464C14.4512 14.8417 14.4512 15.1583 14.6464 15.3536L15 15L15.3536 14.6464ZM20.6464 21.3536C20.8417 21.5488 21.1583 21.5488 21.3536 21.3536C21.5488 21.1583 21.5488 20.8417 21.3536 20.6464L21 21L20.6464 21.3536ZM10 17V16.5C6.41015 16.5 3.5 13.5899 3.5 10H3H2.5C2.5 14.1421 5.85786 17.5 10 17.5V17ZM3 10H3.5C3.5 6.41015 6.41015 3.5 10 3.5V3V2.5C5.85786 2.5 2.5 5.85786 2.5 10H3ZM10 3V3.5C13.5899 3.5 16.5 6.41015 16.5 10H17H17.5C17.5 5.85786 14.1421 2.5 10 2.5V3ZM17 10H16.5C16.5 13.5899 13.5899 16.5 10 16.5V17V17.5C14.1421 17.5 17.5 14.1421 17.5 10H17ZM15 15L14.6464 15.3536L20.6464 21.3536L21 21L21.3536 20.6464L15.3536 14.6464L15 15Z" fill="#101010"/>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- header-nav -->
+
+				<div class="header-mobile__nav">
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<!-- Каталог -->
+							<li class="header__menu-item is-dropdown">
+								<a href="#">
+									<span>Каталог продукции</span>
+									<svg class="icon icon-chevron-down">
+										<use href="images/icons/sprite.svg#chevron-down"></use>
+									</svg>
+								</a>
+								<ul class="header__submenu">
+									<li class="submenu-back">
+										<svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+											<path d="M5 9L1 5L5 1" stroke="#224186" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										Назад
+									</li>
+
+									<li class="is-dropdown">
+										<a href="#">
+											<span>Токарные державки</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M10 8L14 12L10 16" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+										<ul class="header__submenu">
+											<li>
+												<a href="#">
+													<span>Сборные державки</span>
+													<!-- <svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														fill="none"
+													>
+														<path
+															d="M10 8L14 12L10 16"
+															stroke="#101010"
+															stroke-linecap="round"
+															stroke-linejoin="round"
+														/>
+													</svg> -->
+												</a>
+												<ul class="padding">
+													<li><a href="#">Бортштанги</a></li>
+													<li><a href="#">Бортштанги</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Цельные микродержавки</a></li>
+										</ul>
+									</li>
+
+									<li class="is-dropdown">
+										<a href="#">
+											<span>Токарные державки</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+												<path d="M10 8L14 12L10 16" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</a>
+										<ul class="header__submenu">
+											<li><a href="#">Сборные державки</a></li>
+											<li><a href="#">Цельные микродержавки</a></li>
+										</ul>
+									</li>
+
+									<li><a href="#">Токарные Пластины</a></li>
+									<li><a href="#">Отрезка и обработка канавок</a></li>
+									<li><a href="#">Токарные Пластины</a></li>
+									<li><a href="#">Отрезка и обработка канавок</a></li>
+									<li><a href="#">Токарные Пластины</a></li>
+									<li><a href="#">Отрезка и обработка канавок</a></li>
+									<li><a href="#">Токарные Пластины</a></li>
+									<li><a href="#">Отрезка и обработка канавок</a></li>
+								</ul>
+							</li>
+
+							<li class="header__menu-item"><a href="#">Дилеры</a></li>
+
+							<li class="header__menu-item is-dropdown">
+								<a href="#">
+									<span>О компании</span>
+									<svg class="icon icon-chevron-down">
+										<use href="images/icons/sprite.svg#chevron-down"></use>
+									</svg>
+								</a>
+								<ul class="header__submenu">
+									<li class="submenu-back">
+										<svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+											<path d="M5 9L1 5L5 1" stroke="#224186" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										Назад
+									</li>
+									<li><a href="#">История</a></li>
+									<li><a href="#">Команда</a></li>
+								</ul>
+							</li>
+
+							<li class="header__menu-item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header-mobile__foot">
+					<a href="tel:+78126330717" class="header__call-phone">+7 812 633-07-17</a>
+					<a href="#" class="button button-size-lg button-color--grey header__download" download>
+						<span>Скачать каталог</span>
+						<svg class="icon icon-download">
+							<use href="images/icons/sprite.svg#download"></use>
+						</svg>
+					</a>
+					<div class="header__lang">
+						<a href="#" class="header__lang-item is-active">Рус</a>
+						<a href="#" class="header__lang-item">Eng</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- Header-search -->
+
+<div class="header-search">
+	<div class="header-search__top">
+		<h3 class="u-text-h2 header-search__title">Поиск</h3>
+		<div class="header-search__close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<path d="M18 6L6 18" stroke="#1C1E24" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M6 6L18 18" stroke="#1C1E24" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</div>
+	</div>
+	<form action="#">
+		<input type="text">
+		<button class="button header-search__btn">Искать</button>
+	</form>
+</div>
+
+
+			<main id="smooth-content" class="page">
+				<div data-observ></div>
+
+				<div class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <div class="breadcrumbs__item">
+      <a href="/" class="breadcrumbs__item-link">Главная</a>
+      <svg class="icon breadcrumbs__item-icon icon-slash">
+        <use href="images/icons/sprite.svg#slash"></use>
+      </svg>
+    </div>
+    <div class="breadcrumbs__item">
+      <span class="breadcrumbs__item-link is-not-link">«МЕТАЛЛООБРАБОТКА-2022» 23.05.22–27.05.2022</span>
+    </div>
+  </div>
+</div>
+
+				<div class="news-detal">
+					<div class="news-detal__container">
+						<h1 class="u-text-color-black news-detal__title u-text-h1">«МЕТАЛЛООБРАБОТКА -2022» 23.05.22–27.05.2022</h1>
+
+						<div class="news-detal__content">
+							<h2 class="u-text-h2">Подробнее о выставке</h2>
+							<p>
+								С 23 по 27 мая 2022 года в Москве в ЦВК «Экспоцентр» состоялась 23-я международная специализированная
+								выставка «Оборудование, приборы и инструменты для металлообрабатывающей промышленности» –
+								«Металлообработка-2022».
+							</p>
+
+							<p>
+								«Металлообработка» – самый масштабный и авторитетный в России выставочный проект в области станкостроения
+								и металлообработки. Входит в десятку ведущих международных национальных промышленных форумов.
+							</p>
+
+							<div class="news-detal__img">
+								<img src="images/news-det.png" alt="">
+							</div>
+
+							<h2 class="u-text-h2">Перспективы и развитие</h2>
+
+							<p>
+								С 23 по 27 мая 2022 года в Москве в ЦВК «Экспоцентр» состоялась 23-я международная специализированная
+								выставка «Оборудование, приборы и инструменты для металлообрабатывающей промышленности» –
+								«Металлообработка-2022».
+							</p>
+
+							<p>
+								«Металлообработка» – самый масштабный и авторитетный в России выставочный проект в области станкостроения
+								и металлообработки. Входит в десятку ведущих международных национальных промышленных форумов.
+							</p>
+
+							<h2 class="u-text-h2">Цифры Мероприятия</h2>
+
+							<ul>
+								<li>604 компании из 20 стран</li>
+								<li>24 881 кв. м. площадь выставки</li>
+
+								<li>36 259 посетителей</li>
+							</ul>
+
+							<h2 class="u-text-h2">Инновации и разнообразие ассортимента</h2>
+
+							<p>
+								На своём стенде компания представила широкий выбор инструмента для различных задач металлообработки:
+								от высокоточных фрез и свёрл до специализированного оборудования для сложных операций. Посетители смогли
+								лично оценить преимущества продукции брендов‑партнёров, а также получить консультации от технических
+								специалистов «МЕГАТУЛС».
+							</p>
+
+							<div class="swiper news-detal__slider">
+								<div class="swiper-pagination"></div>
+								<div class="swiper-wrapper news-detal__wrapper">
+									<div class="news-detal__grid swiper-slide">
+										<img src="images/news1.png" alt="">
+									</div>
+									<div class="news-detal__grid swiper-slide">
+										<img src="images/news1.png" alt="">
+									</div>
+									<div class="news-detal__grid swiper-slide">
+										<img src="images/news1.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<h2 class="u-text-h2">Инновации и разнообразие ассортимента</h2>
+
+							<div class="swiper news-detal__big">
+								<div class="swiper-pagination"></div>
+								<div class="swiper-wrapper news-detal__grids">
+									<div class="news-detal__grid swiper-slide">
+										<img src="images/news1.png" alt="">
+									</div>
+									<div class="news-detal__grid swiper-slide">
+										<img src="images/news1.png" alt="">
+									</div>
+								</div>
+							</div>
+
+
+              <h2 class="u-text-h2">Итоги выставки «Металлообработка-2022»</h2>
+
+							<span class="news-detal__citata">
+								<p>
+									Выставка «Металлообработка-2022» стала компактнее из-за ухода с рынка некоторых иностранных компаний.
+									Но эту нишу заполнили российские производители. Этот факт подтверждается большим количеством
+									посетителей: за два первых дня работы выставки их стало на 15% больше, чем в прошлом году.
+									Следовательно, для производителей есть все предпосылки для наращивания объёма заказов
+								</p>
+
+								<b>Денис Мантуров, министр промышленности и торговли</b>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<section class="block__form fadein u-margin-bottom-60">
+	<div class="block__form-container">
+		<div class="block__form-text">
+			<h2 class="u-text-h2 u-text-color-black">Нужна помощь в&nbsp;подборе инструментов?</h2>
+			<p class="u-text-color-grey-500 u-text-lg">
+				Оставьте заявку, менеджеры свяжутся с&nbsp;вами в&nbsp;течение 24&nbsp;часов и&nbsp;ответят на&nbsp;все входящие вопросы
+			</p>
+		</div>
+		<form action="#" class="form__feedback">
+			<div class="form__feedback-container">
+				<fieldset class="form__feedback-input">
+					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
+					<input type="text" placeholder="Имя">
+				</fieldset>
+				<fieldset class="form__feedback-input">
+					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
+					<input type="tel" placeholder="+7 999 999-99-99">
+				</fieldset>
+				<fieldset class="form__feedback-policy">
+					<input type="checkbox">
+					<label class="form__feedback-policy__text">
+						Я&nbsp;даю своё согласие на&nbsp;обработку персональных данных, в&nbsp;соответствии с&nbsp;Федеральным законом
+						от&nbsp;27.07.2006 года &#8470;&nbsp;152-ФЗ &laquo;О&nbsp;персональных данных&raquo;, на&nbsp;условиях и&nbsp;для
+						целей, определённых в&nbsp;<a href="#">Согласии на&nbsp;обработку персональных данных</a>
+					</label>
+				</fieldset>
+				<fieldset class="form__feedback-send">
+					<button class="button button-size-lg button-color--redfill" type="submit">Получить консультацию</button>
+				</fieldset>
+			</div>
+		</form>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__top">
+			<div class="footer__info">
+				<div class="footer__info-text">
+					<h3 class="u-text-color-white u-text-sm u-text-weight-regular">
+						MEGATEC&trade;&nbsp;&mdash; качественный, современный, инновационный и&nbsp;высокопроизводительный <br>инструмент
+						по&nbsp;конкурентным ценам.
+					</h3>
+					<p class="u-text-color-white u-text-sm u-text-weight-regular">
+						197341, Санкт-Петербург, <br>Коломяжский&nbsp;пр., д.. 33, Б/Ц &laquo;СОДРУЖЕСТВО&raquo;
+					</p>
+				</div>
+				<div class="footer__social">
+					<a href="#" class="footer__social-item">
+						<svg class="icon icon-social">
+							<use href="images/icons/sprite.svg#telegram-white"></use>
+						</svg>
+					</a>
+					<a href="#" class="footer__social-item">
+						<svg class="icon icon-social">
+							<use href="images/icons/sprite.svg#vk-white"></use>
+						</svg>
+					</a>
+					<a href="#" class="footer__social-item">
+						<svg class="icon icon-social">
+							<use href="images/icons/sprite.svg#whatsapp-white"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__item">
+				<h4 class="u-text-color-white-40 u-text-h4">Клиентам</h4>
+				<div class="footer__menu">
+					<a href="#" class="u-text-color-white u-text-sm">Каталог продукции</a>
+					<a href="#" class="u-text-color-white u-text-sm">Дилеры</a>
+					<a href="#" class="u-text-color-white u-text-sm">О&nbsp;компании</a>
+					<a href="#" class="u-text-color-white u-text-sm">Контакты</a>
+					<a href="#" class="u-text-color-white u-text-sm">Корзина</a>
+				</div>
+			</div>
+			<div class="footer__item">
+				<h4 class="u-text-color-white-40 u-text-h4">Каталог продукции</h4>
+				<div class="footer__menu">
+					<a href="#" class="u-text-color-white u-text-sm">Токарные державки</a>
+					<a href="#" class="u-text-color-white u-text-sm">Антивибрационные державки</a>
+					<a href="#" class="u-text-color-white u-text-sm">Токарные пластины</a>
+					<a href="#" class="u-text-color-white u-text-sm">Отрезка и&nbsp;обработка канавок</a>
+					<a href="#" class="u-text-color-white u-text-sm">Резьбонарезной токарный инструмент</a>
+					<a href="#" class="u-text-color-white u-text-sm">Цельный твердосплавный инструмент</a>
+					<a href="#" class="u-text-color-white u-text-sm">Фрезы со&nbsp;сменными многогранными пласстинами</a>
+					<a href="#" class="u-text-color-white u-text-sm">Сверла со&nbsp;сменными многогранными пласстинами</a>
+					<a href="#" class="u-text-color-white u-text-sm">Резьбофрезы</a>
+					<a href="#" class="u-text-color-white u-text-sm">Метчики из&nbsp;порошковой быстрорежущей стали</a>
+				</div>
+			</div>
+			<div class="footer__item">
+				<h4 class="u-text-color-white-40 u-text-h4">Контакты</h4>
+				<div class="footer__call">
+					<a href="tel:+78126330717" class="u-text-color-white u-text-sm">+7 812 633-07-17</a>
+					<a href="tel:+78126330718" class="u-text-color-white u-text-sm">+7 812 633-07-18</a>
+					<a href="mailto:info@megatools.ru" class="u-text-color-white u-text-sm">info@megatools.ru</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<p class="u-text-color-white-40 u-text-xs footer__bottom-item">&copy;&nbsp;2025 Мегатулс</p>
+			<a href="#" class="u-text-color-white-40 u-text-xs footer__bottom-item">Политика в&nbsp;отношении обработки персональных данных</a>
+			<a href="#" class="u-text-color-white-40 u-text-xs footer__bottom-item">Политика конфиденциальности</a>
+			<a href="#" class="u-text-color-white-40 u-text-xs footer__bottom-item">Политика обработки файлов Cookie</a>
+			<a href="#" class="u-text-color-white-40 u-text-xs footer__bottom-item">
+				<p class="u-text-color-white-40 u-text-xs footer__bottom-item__text">Разработка и&nbsp;продвижение сайта</p>
+				<svg class="icon icon-develop-logo">
+					<use href="images/icons/sprite.svg#nastartweb"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</footer>
+
+<div class="nw-modal" id="js-nw-modal-call" style="display: none">
+	<div class="nw-modal__container">
+		<button class="nw-modal__close" aria-label="Закрыть модальное окно" data-fancybox-close>
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<path d="M18 6L6 18" stroke="#1C1E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M6 6L18 18" stroke="#1C1E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+
+		<div class="nw-modal__content">
+			<div class="nw-modal__header">
+				<h2 class="u-text-h3">Оставить заявку</h2>
+			</div>
+
+			<form action="#" method="POST" class="nw-modal__form">
+				<fieldset class="form__feedback-input">
+					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
+					<input type="text" placeholder="Имя">
+				</fieldset>
+				<fieldset class="form__feedback-input">
+					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
+					<input type="tel" placeholder="+7 999 999-99-99">
+				</fieldset>
+
+				<fieldset class="form__feedback-input">
+					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
+					<input type="text" placeholder="Email">
+				</fieldset>
+
+				<div class="nw-modal__form-group">
+					<fieldset class="form__feedback-policy">
+						<input type="checkbox">
+						<label class="form__feedback-policy__text">
+							Я&nbsp;даю своё согласие на&nbsp;обработку персональных данных, в&nbsp;соответствии с&nbsp;Федеральным законом
+							от&nbsp;27.07.2006 года №&nbsp;152-ФЗ «О&nbsp;персональных данных», на&nbsp;условиях и&nbsp;для целей,
+							определённых в&nbsp;<a href="#">Согласии на&nbsp;обработку персональных данных</a>
+						</label>
+					</fieldset>
+				</div>
+
+				<button type="submit" class="button button-size-lg button-color--redfill">Отправить</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- Модальное окно для корзины, простилизованл -->
+
+
+<div class="nw-modal" id="js-nw-modal-order" style="display: none">
+	<div class="nw-modal__container">
+		<button class="nw-modal__close" aria-label="Закрыть модальное окно" data-fancybox-close>
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<path d="M18 6L6 18" stroke="#1C1E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M6 6L18 18" stroke="#1C1E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+		<div class="nw-modal__content">
+			<div class="nw-modal__header">
+				<h2 class="nw-modal__title">Благодарим за заявку!</h2>
+				<p class="nw-modal__description">В ближайшее время с вами свяжется менеджер</p>
+				<a href="#" class="button button-size-lg button-color--redfill nw-modal__btn">В Каталог</a>
+			</div>
+		</div>
+	</div>
+</div>
+			</main>
+
+		</div>
+	</body>
+</html>

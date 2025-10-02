@@ -1,0 +1,165 @@
+@use "../config" as *;
+
+/* ===================================
+   Утилиты для типографики (u-text-*)
+   =================================== */
+
+/*
+ * Размеры заголовков
+ */
+
+.u-text-h1 {
+	font-family: var(--sc-font-family);
+	font-variation-settings: var(--font-weight-500);
+	font-size: auto-clamp(27, 64);
+	line-height: 120%;
+}
+.u-text-h2 {
+	font-family: var(--sc-font-family);
+	font-variation-settings: var(--font-weight-500);
+	font-size: auto-clamp(22, 48);
+	line-height: 120%;
+}
+.u-text-h3 {
+	font-family: var(--sc-font-family);
+	font-variation-settings: var(--font-weight-500);
+	font-size: auto-clamp(20, 32);
+	line-height: 120%;
+}
+.u-text-h4 {
+	font-family: var(--sc-font-family);
+	font-variation-settings: var(--font-weight-500);
+	font-size: auto-clamp(18, 24);
+	line-height: 120%;
+}
+.u-text-h5 {
+	font-family: var(--sc-font-family);
+	font-variation-settings: var(--font-weight-500);
+	font-size: rem(20);
+	line-height: 120%;
+}
+
+/*
+ * Размеры основного текста
+ */
+
+.u-text-xxl {
+	font-variation-settings: var(--font-weight-500);
+	font-size: rem(24);
+	line-height: 130%;
+}
+.u-text-xl {
+	font-variation-settings: var(--font-weight-500);
+	font-size: auto-clamp(18, 24);
+	line-height: 130%;
+}
+.u-text-lg {
+	font-variation-settings: var(--font-weight-500);
+	font-size: auto-clamp(18, 20);
+	line-height: 130%;
+}
+.u-text-lg-18 {
+	font-variation-settings: var(--font-weight-500);
+	font-size: rem(18);
+	line-height: 130%;
+}
+.u-text-md {
+	font-variation-settings: var(--font-weight-500);
+	font-size: auto-clamp(16, 20);
+	line-height: 130%;
+}
+.u-text-sm {
+	font-variation-settings: var(--font-weight-500);
+	font-size: rem(16);
+	line-height: 130%;
+}
+.u-text-xs {
+	font-variation-settings: var(--font-weight-500);
+	font-size: rem(14);
+	line-height: 130%;
+}
+
+/*
+ * Начертания (вес)
+ */
+
+.u-text-weight-bold {
+	font-variation-settings: var(--font-weight-700);
+}
+.u-text-weight-demibold {
+	font-variation-settings: var(--font-weight-600);
+}
+.u-text-weight-medium {
+	font-variation-settings: var(--font-weight-500);
+}
+.u-text-weight-regular {
+	font-variation-settings: var(--font-weight-400);
+}
+
+/*
+ * Цвета текста
+ */
+
+.u-text-color-white {
+	color: var(--color-white);
+  transition: var(--bs-transition);
+}
+.u-text-color-white-40 {
+	color: var(--color-white-40);
+  transition: var(--bs-transition);
+}
+.u-text-color-black {
+	color: var(--color-black);
+  transition: var(--bs-transition);
+}
+.u-text-color-blue {
+	color: var(--color-blue);
+  transition: var(--bs-transition);
+}
+.u-text-color-red-light {
+	color: var(--color-red-light);
+  transition: var(--bs-transition);
+}
+.u-text-color-grey-700 {
+	color: var(--color-grey-700);
+  transition: var(--bs-transition);
+}
+.u-text-color-grey-500 {
+	color: var(--color-grey-500);
+  transition: var(--bs-transition);
+}
+
+/*
+ * Преобразование текста
+ */
+ .u-text-uppercase {
+	text-transform: uppercase;
+}
+
+/* ==================================
+   Утилиты для отступов (u-margin-*)
+   ================================== */
+
+.u-margin-bottom-l {
+	margin-bottom: auto-clamp(60, 120);
+}
+.u-margin-bottom-m {
+	margin-bottom: auto-clamp(40, 60);
+}
+.u-margin-bottom-s {
+	margin-bottom: auto-clamp(20, 30);
+}
+.u-margin-bottom-60 {
+	margin-bottom: rem(60);
+}
+.u-margin-bottom-10 {
+	margin-bottom: rem(10);
+}
+
+/* ==================================
+   Утилиты для анимации (u-anim-*)
+   ================================== */
+
+.u-anim-fade-in {
+  opacity: 0; 
+}

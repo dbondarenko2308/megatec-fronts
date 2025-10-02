@@ -1,0 +1,35 @@
+@use "../config" as *;
+
+.breadcrumbs {
+  margin-top: auto-clamp(20, 40);
+  margin-bottom: auto-clamp(30, 60);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: rem(6);
+    @include make-container();
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: rem(6);
+
+    &-link {
+      color: var(--color-grey-700);
+      font-variation-settings: var(--font-weight-400);
+      font-size: rem(16);
+      line-height: 130%;
+      transition: var(--bs-transition);
+
+      &.is-not-link {
+        color: var(--color-blue);
+      }
+
+      &:hover:not(span) {
+        color: var(--color-black);
+      }
+    }
+  }
+}

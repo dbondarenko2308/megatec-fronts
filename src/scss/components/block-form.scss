@@ -1,0 +1,55 @@
+@use '../config' as *;
+
+.block__form {
+	border-radius: rem(24);
+	background: var(--color-grey-100);
+	position: relative;
+
+	&--feed {
+		min-height: 762px;
+
+		.form__feedback-send {
+			grid-column: span 2;
+
+			@include media-mx(1099) {
+				grid-column: auto;
+			}
+		}
+
+		@media only screen and (max-width: 991px) {
+			min-height: inherit;
+		}
+	}
+
+	&--img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		@media only screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	&-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: rem(20);
+		@include make-container();
+		padding-top: auto-clamp(50, 80);
+		padding-bottom: auto-clamp(50, 80);
+		position: relative;
+		z-index: 1;
+
+		@include media-mx(767) {
+			grid-template-columns: 100%;
+			grid-gap: rem(40);
+		}
+	}
+
+	&-text {
+		display: flex;
+		flex-direction: column;
+		gap: auto-clamp(15, 20);
+	}
+}

@@ -1,0 +1,42 @@
+@use "../config" as *;
+
+.block__about {
+
+  &-container {
+    @include make-container();
+  }
+
+  &-caption {
+    display: grid;
+    grid-template-columns: auto-clamp(260, 460) 1fr;
+    margin-bottom: auto-clamp(20, 40);
+    
+    @include media-mx(767) {
+      grid-template-columns: 100%;
+      grid-gap: rem(20);
+    }
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: auto-clamp(30, 40);
+    margin-left: auto-clamp(260, 460);
+
+    @include media-mx(767) {
+      margin-left: 0;
+
+      .button {
+        width: 100%;
+      }
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: auto-clamp(10, 20);
+    max-width: 900px;
+  }
+}

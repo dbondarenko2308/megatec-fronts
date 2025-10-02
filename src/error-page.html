@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { 'title': '404' })
+	<body>
+		<div id="smooth-wrapper">
+			@@include('html/header.html')
+
+			<main id="smooth-content" class="page">
+				<div data-observ></div>
+
+			
+
+				<div class="error-page">
+					<div class="error-page__container">
+						<div class="error-page__img">
+							<img src="images/error-img.svg" alt="" />
+						</div>
+
+						<div class="error-page__title">Страница не найдена</div>
+
+						<div class="error-page__text">Возможно, она была перемещена или удалена</div>
+
+						<a href="#" class="error-page__btn button">На главную</a>
+					</div>
+				</div>
+				@@include('html/footer.html')
+				<div class="basket__overlay"></div>
+			</main>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+:root {
+	// Семейство шрифта по умолчанию
+	--bs-font-family: Manrope-Font, sans-serif;
+	--sc-font-family: UNCAGE-Font, sans-serif;
+
+	// Размер шрифта по умолчанию
+	--bs-font-size: 16px;
+
+	// Жирность шрифта
+	--font-weight-400: "wght" 400;
+	--font-weight-500: "wght" 500;
+	--font-weight-600: "wght" 600;
+	--font-weight-700: "wght" 700;
+
+	// Базовая высота шрифта
+	--bs-line-height: 1;
+
+	// Цвет шрифта по умолчанию
+	--color-white: #fff;
+	--color-white-05: rgba(255, 255, 255, 0.05);
+	--color-white-15: rgba(255, 255, 255, 0.15);
+	--color-white-40: rgba(255, 255, 255, 0.4);
+	--color-grey-100: #F9F9F9;
+	--color-grey-200: #E8E8E8;
+	--color-grey-400: #DADADA;
+	--color-grey-500: #9C9C9C;
+	--color-grey-700: #6B6B6B;
+	--color-black: #101010;
+	--color-red: #ED2B15;
+	--color-red-dark: #E21700;
+	--color-red-light: #FF4530;
+	--color-blue: #2145A0;
+	--color-blue-dark: #224186;
+	--color-blue-50: #F0F7FE;
+
+	--bs-transition: 0.3s ease-in-out;
+}
