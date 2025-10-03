@@ -69,6 +69,7 @@
 		border: 1px solid #ebebeb;
 		cursor: pointer;
 		transition: 300ms;
+		flex-shrink: 0;
 
 
 		&:hover {

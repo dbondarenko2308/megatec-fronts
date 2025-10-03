@@ -129,3 +129,18 @@ body {
 		background: #f9f9f9;
 	}
 }
+
+
+.basket__quantity-btn {
+	svg {
+		transition: 300ms;
+	}
+
+	&:hover {
+		svg {
+			path {
+				stroke: #2145a0;
+			}
+		}
+	}
+}

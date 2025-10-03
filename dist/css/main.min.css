@@ -538,6 +538,13 @@ body {
   background: #f9f9f9;
 }
 
+.basket__quantity-btn svg {
+  transition: 300ms;
+}
+.basket__quantity-btn:hover svg path {
+  stroke: #2145a0;
+}
+
 /**
  * Swiper 11.2.10
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2874,6 +2881,8 @@ div.fancybox__dialog {
 @media only screen and (max-width: 991px) {
   .header__basket {
     order: -1;
+    width: 44px !important;
+    height: 44px !important;
   }
 }
 .header__basket-count {
@@ -4799,6 +4808,11 @@ div.fancybox__dialog {
 .detal-table {
   margin-bottom: 60px;
 }
+@media only screen and (max-width: 767px) {
+  .detal-table .basket__quantity-val {
+    width: 100%;
+  }
+}
 .detal-table__top {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4921,6 +4935,7 @@ div.fancybox__dialog {
 }
 .product-table .basket__quantity-val {
   background: #f9f9f9;
+  width: 100%;
 }
 
 .product-table th,
@@ -5183,6 +5198,7 @@ div.fancybox__dialog {
   border: 1px solid #ebebeb;
   cursor: pointer;
   transition: 300ms;
+  flex-shrink: 0;
 }
 .basket__delete:hover {
   background: #F0F7FE;

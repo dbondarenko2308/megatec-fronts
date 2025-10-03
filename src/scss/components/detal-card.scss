@@ -47,6 +47,12 @@
 .detal-table {
 	margin-bottom: 60px;
 
+	@media only screen and (max-width: 767px) {
+		.basket__quantity-val {
+			width: 100%;
+		}
+	}
+
 	&__top {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -179,6 +185,7 @@
 
 	.basket__quantity-val {
 		background: #f9f9f9;
+		width: 100%;
 	}
 }
 .product-table th,
@@ -365,12 +372,10 @@
 	}
 
 	&__container {
-
 		@media only screen and (max-width: 991px) {
 			padding-bottom: 30px;
 		}
 
-		
 		.swiper-pagination {
 			display: none;
 
