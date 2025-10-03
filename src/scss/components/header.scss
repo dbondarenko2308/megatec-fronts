@@ -124,6 +124,10 @@
 	}
 
 	&__search {
+		&:hover {
+			border-color: var(--color-blue-dark);
+			background: var(--color-blue-50);
+		}
 		@media only screen and (max-width: 991px) {
 			&.button {
 				display: none;
@@ -218,6 +222,11 @@
 	}
 
 	&__download {
+		&:hover {
+			background: #f0f7fe;
+			border: 1px solid #224186;
+			color: #224186;
+		}
 		@media only screen and (max-width: 1500px) {
 			&.button {
 				padding: 15px;
@@ -662,6 +671,10 @@
 	transition: all 0.3s ease;
 	display: none;
 	opacity: 0;
+
+	&.submenu-company {
+		min-width: 300px;
+	}
 
 	@media only screen and (max-width: 1500px) {
 		min-width: 400px;

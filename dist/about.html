@@ -85,10 +85,17 @@
 						<a href="#">Дилеры</a>
 					</li>
 					<li class="header__menu-item is-dropdown">
-						<a href="#">О компании</a>
-						<ul class="header__submenu">
-							<li><a href="#">История</a></li>
-							<li><a href="#">Команда</a></li>
+						<a href="#">
+							<span>О компании</span>
+
+							<svg class="icon icon-chevron-down">
+								<use href="images/icons/sprite.svg#chevron-down"></use>
+							</svg>
+						</a>
+						<ul class="header__submenu submenu-company">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Видео</a></li>
+							<li><a href="#">Новости</a></li>
 						</ul>
 					</li>
 					<li class="header__menu-item"><a href="#">Контакты</a></li>
@@ -378,11 +385,11 @@
 									</ul>
 								</div>
 								<div class="about-more__item">
-									<span class="u-text-h4">Инструмент MEGATEC™ создаётся в соответствии с самыми высокими требованиями к:</span>
+									<span class="u-text-h4">Это профессиональный инструмент, который обеспечивает:</span>
 									<ul>
-										<li>Точности и стабильности обработки,</li>
-										<li>Надёжности в эксплуатации,</li>
-										<li>Ресурсоэффективности и износостойкости.</li>
+										<li>Высокую производительность,</li>
+										<li>Длительный срок службы,</li>
+										<li>Стабильный результат даже в условиях сложного производства.</li>
 									</ul>
 								</div>
 							</div>
@@ -430,10 +437,20 @@
 											<path d="M2 2H22V22" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
 									</div>
-									<div class="about-adva__number">1</div>
+									<div class="about-adva__number">3</div>
+
+									<div class="about-adva__text">Быструю и надёжную логистику по всей территории РФ</div>
+								</div>
+								<div class="about-adva__item">
+									<div class="about-adva__arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path d="M2 2H22V22" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+									<div class="about-adva__number">4</div>
 
 									<div class="about-adva__text">
-										Более 10000  наименований всегда в наличии на складе в Санкт-Петербурге
+										Техническую экспертизу на всех этапах — от подбора инструмента до внедрения в производство
 									</div>
 								</div>
 								<div class="about-adva__item">
@@ -442,19 +459,11 @@
 											<path d="M2 2H22V22" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
 									</div>
-									<div class="about-adva__number">2</div>
+									<div class="about-adva__number">5</div>
 
-									<div class="about-adva__text">Инструмент премиального качества по конкурентным ценам</div>
-								</div>
-								<div class="about-adva__item">
-									<div class="about-adva__arrow">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M2 2H22V22" stroke="#101010" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
+									<div class="about-adva__text">
+										Обучение персонала заказчика: от базовых знаний до работы с труднообрабатываемыми материалами
 									</div>
-									<div class="about-adva__number">2</div>
-
-									<div class="about-adva__text">Инструмент премиального качества по конкурентным ценам</div>
 								</div>
 								<div class="about-adva__item blue">
 									<div class="about-adva__arrow">
@@ -462,10 +471,10 @@
 											<path d="M2 2H22V22" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
 									</div>
-									<div class="about-adva__number">1</div>
+									<div class="about-adva__number">6</div>
 
 									<div class="about-adva__text">
-										Более 10000  наименований всегда в наличии на складе в Санкт-Петербурге
+										Каталоги, инструкции и рекомендации для инженерно-технологических служб
 									</div>
 								</div>
 								<div class="about-adva__item wide">
@@ -476,9 +485,7 @@
 									</div>
 									<div class="about-adva__number">7</div>
 
-									<div class="about-adva__text">
-										Проведение сравнительных тестов, пилотных проектов и демонстраций на площадке клиента
-									</div>
+									<div class="about-adva__text">Проведение сравнительных тестов, пилотных проектов и демонстраций</div>
 								</div>
 							</div>
 						</div>
@@ -568,7 +575,7 @@
 				</fieldset>
 				<fieldset class="form__feedback-input">
 					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
-					<input type="tel" placeholder="+7 999 999-99-99">
+					<input class="mask" type="tel" placeholder="+7 999 999-99-99">
 				</fieldset>
 				<fieldset class="form__feedback-input">
 					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
@@ -700,7 +707,7 @@
 				</fieldset>
 				<fieldset class="form__feedback-input">
 					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
-					<input type="tel" placeholder="+7 999 999-99-99">
+					<input class="mask" type="tel" placeholder="+7 999 999-99-99">
 				</fieldset>
 
 				<fieldset class="form__feedback-input">
@@ -745,8 +752,6 @@
 
 				<div class="basket__overlay"></div>
 			</main>
-
-			
 		</div>
 	</body>
 </html>

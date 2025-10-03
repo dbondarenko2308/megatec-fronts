@@ -31,12 +31,23 @@
       color: var(--color-red-light);
       border-radius: rem(8);
       border: 1px solid var(--color-red-light);
+
+
+      &:hover {
+        border: 1px solid rgba(237, 43, 21, 1);
+        color: rgba(237, 43, 21, 1);
+      }
     }
 
     &--redfill {
       color: var(--color-white);
       border-radius: rem(8);
       background-color: var(--color-red-light);
+
+      &:hover {
+        background-color: rgba(237, 43, 21, 1);
+        color: #fff;
+      }
     }
 
     &--grey {

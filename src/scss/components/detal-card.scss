@@ -11,6 +11,10 @@
 		@include make-container();
 	}
 
+	h1 {
+		margin-bottom: 60px;
+	}
+
 	&__inner {
 		display: grid;
 		grid-template-columns: 132px 1fr;

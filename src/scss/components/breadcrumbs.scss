@@ -9,6 +9,7 @@
     align-items: center;
     gap: rem(6);
     @include make-container();
+    flex-wrap: wrap;
   }
 
   &__item {

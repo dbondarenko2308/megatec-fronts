@@ -2834,6 +2834,10 @@ div.fancybox__dialog {
     display: none !important;
   }
 }
+.header__search:hover {
+  border-color: var(--color-blue-dark);
+  background: var(--color-blue-50);
+}
 @media only screen and (max-width: 991px) {
   .header__search.button {
     display: none;
@@ -2918,6 +2922,11 @@ div.fancybox__dialog {
     border: 1px solid #e8e8e8;
     justify-content: center;
   }
+}
+.header__download:hover {
+  background: #f0f7fe;
+  border: 1px solid #224186;
+  color: #224186;
 }
 @media only screen and (max-width: 1500px) {
   .header__download.button {
@@ -3281,6 +3290,9 @@ div.fancybox__dialog {
   display: none;
   opacity: 0;
 }
+.header__submenu.submenu-company {
+  min-width: 300px;
+}
 @media only screen and (max-width: 1500px) {
   .header__submenu {
     min-width: 400px;
@@ -3337,6 +3349,7 @@ div.fancybox__dialog {
   max-inline-size: 115.625rem;
   margin-inline: auto;
   padding-inline: 0.9375rem;
+  flex-wrap: wrap;
 }
 .breadcrumbs__item {
   display: flex;
@@ -3615,10 +3628,18 @@ div.fancybox__dialog {
   border-radius: 0.5rem;
   border: 1px solid var(--color-red-light);
 }
+.button-color--red:hover {
+  border: 1px solid rgb(237, 43, 21);
+  color: rgb(237, 43, 21);
+}
 .button-color--redfill {
   color: var(--color-white);
   border-radius: 0.5rem;
   background-color: var(--color-red-light);
+}
+.button-color--redfill:hover {
+  background-color: rgb(237, 43, 21);
+  color: #fff;
 }
 .button-color--grey {
   color: var(--color-black);
@@ -4385,13 +4406,35 @@ div.fancybox__dialog {
     width: calc(100% - 2.5rem);
     height: 100vh;
     padding: 1.25rem;
-    opacity: 0;
     transition: var(--bs-transition);
-    transform: translateX(100%);
     background-color: var(--color-white);
-    pointer-events: none;
-    visibility: hidden;
-    z-index: 101;
+    z-index: 400;
+    border-radius: 0;
+    display: none;
+  }
+  .catalog__filter.is-open {
+    display: block;
+  }
+}
+.catalog__elements-aside__filter-head {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .catalog__elements-aside__filter-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.catalog__aside {
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+@media only screen and (max-width: 991px) {
+  .catalog__aside {
+    position: inherit;
   }
 }
 
@@ -4401,6 +4444,16 @@ div.fancybox__dialog {
 .filter__head {
   justify-content: space-between;
   gap: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+.filter__head svg {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .filter__head svg {
+    display: block;
+  }
 }
 .filter__wrap {
   display: flex;
@@ -4408,10 +4461,41 @@ div.fancybox__dialog {
   gap: 1.875rem;
   height: 100%;
 }
-@media (max-width: 47.9375em) {
-  .filter__wrap {
+.filter__arrow {
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+.filter__arrow.is-rotated {
+  transform: rotate(0);
+}
+@media only screen and (max-width: 767px) {
+  .filter__grids {
+    height: calc(100vh - 140px);
     overflow: auto;
+    padding-right: 20px;
+    margin-right: -20px;
   }
+  .filter__grids::-webkit-scrollbar-track {
+    background: #fff;
+    width: 5px;
+  }
+  .filter__grids::-webkit-scrollbar-thumb {
+    background: #9c9c9c;
+    width: 5px;
+    border-radius: 4px;
+  }
+}
+.filter__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.filter__title h4 {
+  order: -1;
 }
 .filter__button {
   display: flex;
@@ -4451,31 +4535,22 @@ div.fancybox__dialog {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  margin-bottom: 32px;
+}
+.filter__checkbox:last-child {
+  margin-bottom: 0;
 }
 .filter__checkbox-list {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+  display: none;
 }
-.filter__checkbox-list.is-checkbox-drop {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 1.25rem;
-  border-radius: 0px 0px 1.5rem 1.5rem;
-  background-color: var(--color-white);
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: var(--bs-transition);
-  z-index: 5;
-}
-.filter__checkbox-list.is-checkbox-drop.is-open {
+.filter__checkbox-list.is-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
+  display: flex;
 }
 .filter__checkbox-item {
   display: flex;
@@ -4664,6 +4739,9 @@ div.fancybox__dialog {
   max-inline-size: 115.625rem;
   margin-inline: auto;
   padding-inline: 0.9375rem;
+}
+.detal-card h1 {
+  margin-bottom: 60px;
 }
 .detal-card__inner {
   display: grid;
@@ -5552,6 +5630,7 @@ div.fancybox__dialog {
 .about-adva__text {
   color: #6b6b6b;
   font-size: 20px;
+  line-height: 130%;
 }
 .about-adva__items {
   display: grid;
@@ -5659,10 +5738,10 @@ div.fancybox__dialog {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 .search-page {
@@ -6287,6 +6366,9 @@ div.fancybox__dialog {
   max-inline-size: 115.625rem;
   margin-inline: auto;
   padding-inline: 0.9375rem;
+}
+.page-content__container > div {
+  max-width: 1360px;
 }
 .page-content__title {
   margin-bottom: 60px;

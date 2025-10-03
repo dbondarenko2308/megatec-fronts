@@ -384,6 +384,68 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
+    const toggleBtns = document.querySelectorAll('.js-toggle-aside-filter');
+    const filters = document.querySelectorAll('.catalog__filter');
+    const closeBtns = document.querySelectorAll('.filter__head svg'); 
+    const overlays = document.querySelectorAll('.basket__overlay');
+    const header = document.querySelector('.header'); 
+
+    toggleBtns.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const filter = filters[index] || filters[0];
+        const overlay = overlays[index] || overlays[0];
+
+        filter.classList.add('is-open');
+        overlay.classList.add('active');
+        document.body.classList.add('no-scroll');
+
+        if (header) {
+          header.classList.add('is-filter-open');
+        }
+      });
+    });
+
+    const closeFilter = (filter, overlay) => {
+      filter.classList.remove('is-open');
+      overlay.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+
+      if (header) {
+        header.classList.remove('is-filter-open');
+      }
+    };
+
+    closeBtns.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const filter = filters[index] || filters[0];
+        const overlay = overlays[index] || overlays[0];
+        closeFilter(filter, overlay);
+      });
+    });
+
+    overlays.forEach((overlay, index) => {
+      overlay.addEventListener('click', () => {
+        const filter = filters[index] || filters[0];
+        closeFilter(filter, overlay);
+      });
+    });
+
+
+  const filterTitles = document.querySelectorAll('.filter__title');
+
+  filterTitles.forEach(title => {
+    title.addEventListener('click', () => {
+      const parent = title.closest('.filter__checkbox');
+      const list = parent.querySelector('.filter__checkbox-list');
+      const arrow = title.querySelector('.filter__arrow');
+
+      // Переключаем классы
+      list.classList.toggle('is-open');
+      arrow.classList.toggle('is-rotated');
+      title.classList.toggle('is-active'); // <-- добавляем класс на title
+    });
+  });
+
 
 
 function initMenu() {
@@ -447,7 +509,6 @@ window.addEventListener('load', initMenu);
 window.addEventListener('resize', initMenu); 
 
 
-document.addEventListener("DOMContentLoaded", () => {
 	const burger = document.querySelector(".js-burger-menu");
 	const mobileMenu = document.querySelector(".header__mobile");
 
@@ -457,7 +518,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			burger.classList.toggle("is-active");
 		});
 	}
-});
 
 document.addEventListener("scroll", function () {
   const pageTop = window.scrollY; 
@@ -474,3 +534,13 @@ document.addEventListener("scroll", function () {
     }
   });
 });
+
+
+  const phoneInputs = document.querySelectorAll('.mask');
+
+  phoneInputs.forEach(input => {
+    IMask(input, {
+      mask: '+{7} (000) 000-00-00',
+    });
+  });
+

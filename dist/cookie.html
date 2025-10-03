@@ -85,10 +85,17 @@
 						<a href="#">Дилеры</a>
 					</li>
 					<li class="header__menu-item is-dropdown">
-						<a href="#">О компании</a>
-						<ul class="header__submenu">
-							<li><a href="#">История</a></li>
-							<li><a href="#">Команда</a></li>
+						<a href="#">
+							<span>О компании</span>
+
+							<svg class="icon icon-chevron-down">
+								<use href="images/icons/sprite.svg#chevron-down"></use>
+							</svg>
+						</a>
+						<ul class="header__submenu submenu-company">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Видео</a></li>
+							<li><a href="#">Новости</a></li>
 						</ul>
 					</li>
 					<li class="header__menu-item"><a href="#">Контакты</a></li>
@@ -321,6 +328,8 @@
 
 				<div class="page-content">
 					<div class="page-content__container">
+						<div>
+
 						<h1 class="u-text-color-black page-content__title u-text-h1">Политика использования файлов cookie</h1>
 
 						<p>Редакция от 02 июня 2025 г.</p>
@@ -430,6 +439,8 @@
 							любое время в системных настройках браузера. Ознакомиться с данной возможностью можно в разделе «Справка»
 							соответствующего браузера.
 						</p>
+						</div>
+
 					</div>
 				</div>
 
@@ -449,7 +460,7 @@
 				</fieldset>
 				<fieldset class="form__feedback-input">
 					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
-					<input type="tel" placeholder="+7 999 999-99-99">
+					<input class="mask" type="tel" placeholder="+7 999 999-99-99">
 				</fieldset>
 				<fieldset class="form__feedback-policy">
 					<input type="checkbox">
@@ -568,7 +579,7 @@
 				</fieldset>
 				<fieldset class="form__feedback-input">
 					<span class="form__feedback-input__error u-text-color-red-light">Поле не заполнено</span>
-					<input type="tel" placeholder="+7 999 999-99-99">
+					<input class="mask" type="tel" placeholder="+7 999 999-99-99">
 				</fieldset>
 
 				<fieldset class="form__feedback-input">
