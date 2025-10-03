@@ -120,6 +120,61 @@ const initCatalogItemBasket = () => {
 };
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const quantityBlocks = document.querySelectorAll('.js-basket-quantity');
+
+  quantityBlocks.forEach(block => {
+    const input = block.querySelector('.basket__quantity-val');
+    const btnMinus = block.querySelector('.js-quantity-minus');
+    const btnPlus = block.querySelector('.js-quantity-plus');
+
+    if (!input || !btnMinus || !btnPlus) return;
+
+    btnPlus.addEventListener('click', () => {
+      input.value = parseInt(input.value, 10) + 1;
+    });
+
+    btnMinus.addEventListener('click', () => {
+      const currentValue = parseInt(input.value, 10);
+      const minValue = parseInt(input.min, 10) || 0;
+
+      if (currentValue > minValue) {
+        input.value = currentValue - 1;
+      }
+    });
+
+    input.addEventListener('input', () => {
+      if (input.value === '' || parseInt(input.value, 10) < 0) {
+        input.value = 0;
+      }
+    });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const arrowTop = document.querySelector('.arrow-top');
+
+  if (!arrowTop) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      arrowTop.classList.add('is-visible');
+    } else {
+      arrowTop.classList.remove('is-visible');
+    }
+  });
+
+  arrowTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+
 
 
 let initProductSlider = () => {

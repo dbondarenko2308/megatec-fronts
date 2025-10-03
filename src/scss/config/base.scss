@@ -100,3 +100,32 @@ body {
 	opacity: 1;
 	transform: translate(0, 0);
 }
+
+.arrow-top {
+	position: fixed;
+	right: 10px;
+	bottom: 50px;
+
+	width: 48px;
+	height: 48px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: 1px solid #e8e8e8;
+	background: #e8e8e8;
+	cursor: pointer;
+	z-index: 100;
+	transition: 300ms;
+
+
+	display: none;
+
+	&.is-visible {
+		display: flex;
+	}
+
+	&:hover {
+		border: 1px solid #2145a0;
+		background: #f9f9f9;
+	}
+}

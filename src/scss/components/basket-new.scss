@@ -67,6 +67,14 @@
 		border-radius: 8px;
 		background: #f9f9f9;
 		border: 1px solid #ebebeb;
+		cursor: pointer;
+		transition: 300ms;
+
+
+		&:hover {
+			background: #F0F7FE;
+			border: 1px solid #224186;
+		}
 	}
 
 	&__left {

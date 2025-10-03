@@ -514,6 +514,30 @@ body {
   transform: translate(0, 0);
 }
 
+.arrow-top {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  background: #e8e8e8;
+  cursor: pointer;
+  z-index: 100;
+  transition: 300ms;
+  display: none;
+}
+.arrow-top.is-visible {
+  display: flex;
+}
+.arrow-top:hover {
+  border: 1px solid #2145a0;
+  background: #f9f9f9;
+}
+
 /**
  * Swiper 11.2.10
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -5157,6 +5181,12 @@ div.fancybox__dialog {
   border-radius: 8px;
   background: #f9f9f9;
   border: 1px solid #ebebeb;
+  cursor: pointer;
+  transition: 300ms;
+}
+.basket__delete:hover {
+  background: #F0F7FE;
+  border: 1px solid #224186;
 }
 .basket__left {
   display: flex;
